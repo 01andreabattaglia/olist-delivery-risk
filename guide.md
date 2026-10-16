@@ -128,6 +128,7 @@
 
 ```python
 import duckdb
+
 duckdb.sql("""
   SELECT order_status, COUNT(*) AS n
   FROM read_csv_auto('data/raw/olist_orders_dataset.csv')
@@ -352,6 +353,7 @@ Poi `uv add torch`.
 
 ```python
 import os
+
 os.environ["KERAS_BACKEND"] = "torch"
 import keras
 ```
